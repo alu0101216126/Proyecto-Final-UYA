@@ -1,4 +1,4 @@
-# Proyecto final UYA - Focus on Study
+<h1 align="center">Proyecto final UYA - Focus on Study</h1>
 
 <p align="center">
   <a href="http://materializecss.com/">
