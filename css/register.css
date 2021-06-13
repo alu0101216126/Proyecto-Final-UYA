@@ -1,0 +1,41 @@
+body {
+    font-family: Georgia;
+}
+
+main {
+    background-color: rgba(151, 247, 247, 0.397);
+    padding-bottom: 4em;
+    padding-top: 2em;
+}
+
+.register {
+	background-color: rgb(255, 255, 255);
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0, 0, 0, 0.22);
+	position: relative;
+    margin-bottom: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.2em;
+}
+
+button {
+    margin-top: 1.8em;
+    margin-bottom: 2em;
+}
+
+.amount-characters {
+    margin-top: 0em;
+    font-weight: 400;
+}
+
+#name, #surname, #email, #password, #repeat-password {
+    margin: 0em;
+}
+main label {
+    font-size: xx-large;
+}
+
+main p {
+    font-size: large;
+}

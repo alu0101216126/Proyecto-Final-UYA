@@ -1,0 +1,62 @@
+body {
+  font-family: Georgia;
+}
+
+.index {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  margin-bottom: 2.5em;
+}
+
+.title {
+  margin: 3em;
+}
+
+button {
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+}
+
+.slider .indicators .indicator-item {
+  background-color: #666666;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #140c0c;
+}
+
+.slider a {
+  margin-top: 2em;
+}
+
+.slider h5{
+  font-weight: 700;
+  margin-top: 2em;
+}
+
+.slider h4 {
+  font-weight: 400;
+}
+
+header a {
+  color: rgb(83, 0, 109);
+}
+
+.cover-page a {
+  margin: 2em;
+}
+
+.cover-page {
+  background-image: url("../images/reloj-fondo.png");
+  background-size: cover;
+}
+
+header {
+  margin-bottom: 0.16em;
+}
+
+main p {
+  font-size: 19px;
+}
