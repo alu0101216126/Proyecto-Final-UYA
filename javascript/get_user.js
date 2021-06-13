@@ -4,7 +4,7 @@ $(document).ready(function() {
         var displayName = user.displayName;
         $("#result").text("Hola, " + user.displayName);
     } else {
-        console.log('No hay nadie logueado');
+        window.location.href = "login.html";
     }
     });
 
