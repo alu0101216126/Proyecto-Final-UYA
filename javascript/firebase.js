@@ -70,4 +70,20 @@ $(document).ready(function() {
         alert("ERROR: " + error.message);
       });
     });
+
+    $("#login_button").on('keypress',function(e) {
+      if(e.which == 13) {
+        var email_login = $("#email_login").val();
+        var password_login = $("#password_login").val();
+        firebase.auth().signInWithEmailAndPassword(email_login, password_login)
+        .then((userCredential) => {
+          // Signed in
+          var user = userCredential.user;
+          window.location.href = "user_menu.html";
+        })
+        .catch((error) => {
+          alert("ERROR: " + error.message);
+        });
+      }
+    });
 });
