@@ -9,7 +9,7 @@ $(document).ready(function() {
     if (user) {
         email = user.email;
     } else {
-        console.log('No hay nadie logueado');
+        window.location.href = "login.html";
     }
   });
 
