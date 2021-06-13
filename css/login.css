@@ -1,5 +1,6 @@
 body {
     font-family: Georgia;
+    font-size: 16px;
 }
 
 .login {
@@ -8,6 +9,10 @@ body {
 			    0 10px 10px rgba(0, 0, 0, 0.22);
 	position: relative;
     margin-top: 2em;
+}
+
+.login label {
+    font-size: large;
 }
 
 main {
@@ -21,7 +26,6 @@ form {
 
 button {
     margin-top: 2.5em;
-    margin-bottom: -1em;
     font-family: Georgia;
 }
 
@@ -39,11 +43,15 @@ button {
 }
 
 p {
-    font-size: larger;
+    font-size: large;
     margin-top: 2em;
 }
 
 .register_button {
     margin-top: 2.5em;
-    margin-bottom: 9em;
+    margin-bottom: 2em;
+}
+
+.register-margin {
+    margin-top: 2em;
 }
