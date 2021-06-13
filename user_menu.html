@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Menu usuario</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="https://materializecss.com/css/prism.css"  media="screen,projection"/>  
+    <link href="css/user_menu.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/header.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon"> 
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+  </head>
+  <body>    
+    <!-- Header -->
+    <header role="contentinfo">
+      <nav class="navbar-title">
+        <div class="nav-wrapper white" tabindex="1">
+          <div class="container">
+            <a href="index.html" class="brand-logo" target="_self"><img class="responsive-img" src="images/logo.png" alt="Logo de Focus on Study" width="80" height="80" tabindex="2"></a>
+          </div>
+          <div  class="container">
+            <a href="index.html" class="hide-title  brand-title purple-text text-darken-3 hide-on-med-and-down" target="_self" tabindex="3">Focus on Study</a>
+            <a id="mobile-menu" href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons purple-text" target="_self" tabindex="4">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li class="input-field">
+                <input role="search" id="search" type="search" required tabindex="5">
+                <p class="border"></p>
+                <label for="search" aria-label="Barra de búsqueda"><i class="purple-text text-darken-3 material-icons menu-icon">search</i></label>
+              </li>
+              <li><a class="purple-text text-darken-3" href="login.html" target="_self" tabindex="6">Iniciar sesión</a></li>
+              <li><a id="menu_events" class="purple-text text-darken-3" href="user_menu.html" target="_self" tabindex="7">Menú de eventos</a></li>
+              <li><a class="purple-text text-darken-3" href="about_us.html" target="_self" tabindex="8">¿Quiénes somos?</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Mobile menu -->
+      <ul class="sidenav" id="mobile-demo"> 
+        <li id="search-margin" class="input-field" tabindex="-1">
+          <input id="search" type="search" tabindex="-1" required>
+          <label id="search-label" class="purple-text text-darken-3" for="search" tabindex="-1"><i class="purple-text text-darken-3 material-icons menu-mobile-icon">search</i></label>
+        </li>
+        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="iniciar-sesion">Iniciar sesión</a></li>
+        <li><a class="purple-text text-darken-3" href="user_menu.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="mobile_menu_events">Menú de eventos</a></li>
+        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="movil">¿Quiénes somos?</a></li>
+      </ul>
+    </header>
+
+    <main>
+    <!-- Breadcrumbs -->
+    <div class="container">
+        <div class="row">
+          <nav>
+            <div class="nav-wrapper">
+              <div class="col s12 m12 l12 purple darken-3">
+                <a href="index.html" class="breadcrumb" target="_self" tabindex="9">Inicio</a>
+                <a href="login.html" class="breadcrumb" target="_self" tabindex="10">Iniciar sesión</a>
+                <a href="user_menu.html" class="breadcrumb" target="_self" tabindex="11">Menú de eventos</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>  
+    
+      <div class="container white user-box center option-box">
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <h3 tabindex="12" id="result"></h3>
+            <h4 tabindex="13">Estas son todas las cosas que puedes hacer</h4>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col s12 m12 l12">
+                  <div class="card teal lighten-4">
+                      <div class="card-content white-text">
+                          <span class="card-style purple-text text-darken-3" tabindex="14">Añadir tus eventos de tareas y exámenes</span>
+                          <p class="black-text" tabindex="15">Incluye nuevas tareas y exámenes en tu calendario.</p>
+                      </div>
+                      <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="create_events.html" target="_self" tabindex="16">Añadir eventos</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col s12 m12 l12">
+                  <div class="card teal lighten-4">
+                      <div class="card-content white-text">
+                          <span class="card-style purple-text text-darken-3" tabindex="17">Ver tareas y exámenes</span>
+                          <p class="black-text" tabindex="18">Mira las tareas y exámenes de tu calendario, con la opción de eliminarlos.</p>
+                      </div>
+                      <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="see_events.html" target="_self" tabindex="19">Ver eventos</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col s12 m12 l12">
+                  <div class="card teal lighten-4">
+                      <div class="card-content white-text">
+                          <span class="card-style purple-text text-darken-3" tabindex="20">Consejos para estudiar</span>
+                          <p class="black-text" tabindex="21">Infórmate acerca de consejos y métodos para estudiar.</p>
+                      </div>
+                      <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="advices.html" target="_self" tabindex="22">Ver consejos</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col s12 m12 l12">
+                  <div class="card teal lighten-4">
+                  <div class="card-content white-text">
+                      <span class="card-style purple-text text-darken-3" tabindex="23">Cerrar sesión</span>
+                      <p class="black-text" tabindex="24">Sal de la cuenta de forma segura. Si quieres volver a ver tus datos, tendrás que iniciar sesión.</p>
+                  </div>
+                  <a role="button" id="logout" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="index.html" tabindex="25">Cerrar sesión</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </main>
+
+   <!-- Footer -->
+   <footer class="page-footer grey darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m7 l6">
+          <h5 class="teal-text text-lighten-4" tabindex="26"><b>Componentes de Focus on Study</b></h5>
+          <ul>
+            <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101216126" target="_blank" tabindex="27">Daniel Álvarez Medina</a></li>
+            <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101228020" target="_blank" tabindex="28">Dayana Armas Alonso</a></li>
+            <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101254678" target="_blank" tabindex="29">Yago Pérez Molanes</a></li>
+            <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101217741" target="_blank" tabindex="30">Alberto Mendoza Rodríguez</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m5 l4 offset-l2">
+          <h5 class="teal-text text-lighten-4" tabindex="31"><b>Redes sociales</b></h5>
+          <ul>
+            <li><img src="images/Facebook.png" alt="Imagen de logo de Facebook" width="25" height="25" tabindex="32"><a class="grey-text text-lighten-3" href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="33">Facebook</a></li>
+            <li><img src="images/Twitter.png" alt="Imagen de logo de Twitter" width="25" height="25" tabindex="34"><a class="grey-text text-lighten-3" href="https://twitter.com/ULL" target="_blank" tabindex="35">Twitter</a></li>
+            <li><img src="images/LinkedIn.png" alt="Imagen de logo de LinkedIn" width="25" height="25" tabindex="36"><a class="grey-text text-lighten-3" href="https://www.linkedin.com/school/universidad-de-la-laguna" target="_blank" tabindex="37">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal-text text-lighten-4">
+      <div class="container">
+        <div class="row"> 
+          <div class="col s12 m5 l5" tabindex="38">
+            © 2021 Copyright
+          </div>
+          <div class="col s12 m7 l7">
+            <a class="teal-text text-lighten-4" href="accessibility.html" target="_self" tabindex="39">Accesibilidad</a>
+            <a class="right teal-text text-lighten-4" href="web_map.html" target="_self" tabindex="40">Mapa web</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+    <!-- Materialize js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+    </script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script>
+      $(document).ready(function() {
+        var firebaseConfig = {
+          apiKey: "AIzaSyD22sKPOpu0lUzpLwmXejHW6LH9pRDog_U",
+          authDomain: "uya-proyecto.firebaseapp.com",
+          projectId: "uya-proyecto",
+          storageBucket: "uya-proyecto.appspot.com",
+          messagingSenderId: "67002661199",
+          appId: "1:67002661199:web:ad0b0f06525665e0bfad3a",
+          measurementId: "G-XLK6KBNR98"
+        };
+        firebase.initializeApp(firebaseConfig);
+      });
+    </script>
+
+    <!-- Js Folder-->
+    <script type="text/javascript" src="javascript/get_user.js"></script>
+    <script type="text/javascript" src="javascript/header.js"></script>
+  </body>
+</html>
