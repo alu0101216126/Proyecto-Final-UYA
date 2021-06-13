@@ -59,7 +59,7 @@ $(document).ready(function() {
   
   
     } else {
-        console.log('No hay nadie logueado');
+        window.location.href = "login.html";
     }
 
     $("#delete_button").mousedown(function() {
