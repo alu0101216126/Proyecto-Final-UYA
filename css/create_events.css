@@ -49,6 +49,10 @@ p {
     font-size: large;
 }
 
+button {
+    font-family: Georgia;
+}
+
 .create_event label {
     font-size: large;
 }
