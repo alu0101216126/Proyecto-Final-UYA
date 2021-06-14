@@ -1,7 +1,7 @@
 ## Proyecto final UYA - Focus on Study</h1>
 
 <p align="center">
-  <a href="http://materializecss.com/">
+  <a href="https://alu0101216126.github.io/Proyecto-Final-UYA/index.html">
     <img src="images/logo.png" width="150" style="max-width:100%;">
   </a>
 </p>
