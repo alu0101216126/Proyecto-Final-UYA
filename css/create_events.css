@@ -20,7 +20,7 @@
     background-color: #5c068c;
 }
 
-.login {
+.create_event {
 	background-color: rgb(255, 255, 255);
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0, 0, 0, 0.22);
@@ -47,6 +47,18 @@ i {
 
 p {
     font-size: large;
+}
+
+.create_event label {
+    font-size: large;
+}
+
+#date_homework, #date_exam {
+    margin-top: 1.5em !important;
+}
+
+.date_homework, .date_exam {
+    font-size: 20px;
 }
 
 [type="date"] {

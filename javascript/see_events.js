@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // Initialize Firebase
+  // Initialize Firebase
   var db = firebase.firestore();
   var result = '';
   var array_homework = []; 
@@ -85,8 +85,34 @@ $(document).ready(function() {
           location.reload();
     });
 
+
+    $("#delete_button").on('keypress',function(e) {
+        if(e.which == 13) {
+            $( "input:checkbox"  ).each(function( index ) {
+                if($( this ).is(':checked')) {
+                    if(index < array_homework.length) {
+                    db.collection("homework").doc(array_homework[index]).delete().catch((error) => {
+                        alert("Error al eliminar la tarea: ", error.message);
+                    });
+                    console.log(array_homework[index]);
+                    } else {
+                        var index_aux = index - array_homework.length;  
+                        db.collection("exams").doc(array_exam[index_aux]).delete().catch((error) => {
+                            alert("Error al eliminar el examen: ", error.message);
+                        });
+                        console.log(index_aux, array_exam[index_aux]);
+                    }
+                } else {
+                    console.log(""); 
+                }
+            });
+            alert("¡Eventos eliminados!");
+            location.reload();
+        }
+    });
+
   });
-  });
+});
 
 
 

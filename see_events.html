@@ -3,21 +3,20 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Menu usuario</title>
+    <title>Ver eventos</title>
 
-    <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="https://materializecss.com/css/prism.css"  media="screen,projection"/>  
-    <link href="css/user_menu.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="https://materializecss.com/css/prism.css"  media="screen,projection"/>
+    <link href="css/see_events.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/header.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
 
     <!-- Icons -->
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon"> 
     <link rel="icon" href="../images/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
   </head>
-  <body>    
+  <body>
     <!-- Header -->
     <header role="contentinfo">
       <nav class="navbar-title">
@@ -64,69 +63,52 @@
                 <a href="index.html" class="breadcrumb" target="_self" tabindex="9">Inicio</a>
                 <a href="login.html" class="breadcrumb" target="_self" tabindex="10">Iniciar sesión</a>
                 <a href="user_menu.html" class="breadcrumb" target="_self" tabindex="11">Menú de eventos</a>
+                <a href="see_events.html" class="breadcrumb" target="_self" tabindex="12">Lista de eventos</a>
               </div>
             </div>
           </nav>
         </div>
-      </div>  
-    
+      </div>
+          
       <div class="container white user-box center option-box">
         <div class="row">
           <div class="col s12 m12 l12">
-            <h3 tabindex="12" id="result"></h3>
-            <h4 tabindex="13">Estas son todas las cosas que puedes hacer</h4>
+            <h4 class="purple-text text-darken-3" tabindex="13">Consulta tu lista de eventos</h4>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <div class="card teal lighten-4">
-                <div class="card-content white-text">
-                  <span class="card-style purple-text text-darken-3" tabindex="14">Añadir tus eventos de tareas y exámenes</span>
-                  <p class="black-text" tabindex="15">Incluye nuevas tareas y exámenes en tu calendario.</p>
-                </div>
-                <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="create_events.html" target="_self" tabindex="16">Añadir eventos</a>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <h4 tabindex="14">Lista de tareas</h4>
+            <table class="striped responsive-table" id="homework_table">
+              <thead>
+                <tr role="row" tabindex="15">
+                  <td role="cell" class="title-table center">Asignatura</td>
+                  <td role="cell" class="center title-table">Nombre</td>
+                  <td role="cell" class="center title-table">Fecha</td>
+                  <td role="cell" class="center title-table">Eliminar</td>
+                </tr>
+              </thead>
+              <tbody id="homework">
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <div class="card teal lighten-4">
-                <div class="card-content white-text">
-                  <span class="card-style purple-text text-darken-3" tabindex="17">Ver tareas y exámenes</span>
-                  <p class="black-text" tabindex="18">Mira las tareas y exámenes de tu calendario, con la opción de eliminarlos.</p>
-                </div>
-                <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="see_events.html" target="_self" tabindex="19">Ver eventos</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <div class="card teal lighten-4">
-                <div class="card-content white-text">
-                  <span class="card-style purple-text text-darken-3" tabindex="20">Consejos para estudiar</span>
-                    <p class="black-text" tabindex="21">Infórmate acerca de consejos y métodos para estudiar.</p>
-                </div>
-                <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="advices.html" target="_self" tabindex="22">Ver consejos</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <div class="card teal lighten-4">
-                <div class="card-content white-text">
-                  <span class="card-style purple-text text-darken-3" tabindex="23">Cerrar sesión</span>
-                  <p class="black-text" tabindex="24">Sal de la cuenta de forma segura. Si quieres volver a ver tus datos, tendrás que iniciar sesión.</p>
-                </div>
-                <a role="button" id="logout" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="index.html" tabindex="25">Cerrar sesión</a>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <h4 tabindex="64">Lista de exámenes</h4>
+            <table class="striped responsive-table" id="exam_table">
+              <thead>
+                <tr role="row" tabindex="65">
+                  <td role="cell" class="center title-table">Asignatura</td>
+                  <td role="cell" class="center title-table">Tema</td>
+                  <td role="cell" class="center title-table">Fecha</td>
+                  <td role="cell" class="center title-table">Eliminar</td>
+                </tr>
+              </thead>
+              <tbody id="exam">
+              </tbody>
+            </table>
+            <a role="button" type="button" id="delete_button" class="waves-light btn-large" aria-describedby="Eliminar eventos" target="_self" tabindex="114">Eliminar eventos</a>
           </div>
         </div>
       </div>
@@ -137,20 +119,20 @@
       <div class="container">
         <div class="row">
           <div class="col s12 m7 l6">
-            <h5 class="teal-text text-lighten-4" tabindex="26"><b>Componentes de Focus on Study</b></h5>
+            <h5 class="teal-text text-lighten-4" tabindex="115"><b>Componentes de Focus on Study</b></h5>
             <ul>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101216126" target="_blank" tabindex="27">Daniel Álvarez Medina</a></li>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101228020" target="_blank" tabindex="28">Dayana Armas Alonso</a></li>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101217741" target="_blank" tabindex="29">Alberto Mendoza Rodríguez</a></li>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101254678" target="_blank" tabindex="30">Yago Pérez Molanes</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101216126" target="_blank" tabindex="116">Daniel Álvarez Medina</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101228020" target="_blank" tabindex="117">Dayana Armas Alonso</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101217741" target="_blank" tabindex="118">Alberto Mendoza Rodríguez</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101254678" target="_blank" tabindex="119">Yago Pérez Molanes</a></li>
             </ul>
           </div>
           <div class="col s12 m5 l4 offset-l2">
-            <h5 class="teal-text text-lighten-4" tabindex="31"><b>Redes sociales</b></h5>
+            <h5 class="teal-text text-lighten-4" tabindex="120"><b>Redes sociales</b></h5>
             <ul>
-              <li><img src="images/Facebook.png" alt="Imagen de logo de Facebook" width="25" height="25" tabindex="32"><a class="grey-text text-lighten-3" href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="33">Facebook</a></li>
-              <li><img src="images/Twitter.png" alt="Imagen de logo de Twitter" width="25" height="25" tabindex="34"><a class="grey-text text-lighten-3" href="https://twitter.com/ULL" target="_blank" tabindex="35">Twitter</a></li>
-              <li><img src="images/LinkedIn.png" alt="Imagen de logo de LinkedIn" width="25" height="25" tabindex="36"><a class="grey-text text-lighten-3" href="https://www.linkedin.com/school/universidad-de-la-laguna" target="_blank" tabindex="37">LinkedIn</a></li>
+              <li><img src="images/Facebook.png" alt="Imagen de logo de Facebook" width="25" height="25" tabindex="121"><a class="grey-text text-lighten-3" href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="122">Facebook</a></li>
+              <li><img src="images/Twitter.png" alt="Imagen de logo de Twitter" width="25" height="25" tabindex="123"><a class="grey-text text-lighten-3" href="https://twitter.com/ULL" target="_blank" tabindex="124">Twitter</a></li>
+              <li><img src="images/LinkedIn.png" alt="Imagen de logo de LinkedIn" width="25" height="25" tabindex="125"><a class="grey-text text-lighten-3" href="https://www.linkedin.com/school/universidad-de-la-laguna" target="_blank" tabindex="126">LinkedIn</a></li>
             </ul>
           </div>
         </div>
@@ -158,18 +140,18 @@
       <div class="footer-copyright teal-text text-lighten-4">
         <div class="container">
           <div class="row"> 
-            <div class="col s12 m5 l5" tabindex="38">
+            <div class="col s12 m5 l5" tabindex="127">
               © 2021 Copyright
             </div>
             <div class="col s12 m7 l7">
-              <a class="teal-text text-lighten-4" href="accessibility.html" target="_self" tabindex="39">Accesibilidad</a>
-              <a class="right teal-text text-lighten-4" href="web_map.html" target="_self" tabindex="40">Mapa web</a>
+              <a class="teal-text text-lighten-4" href="accessibility.html" target="_self" tabindex="128">Accesibilidad</a>
+              <a class="right teal-text text-lighten-4" href="web_map.html" target="_self" tabindex="129">Mapa web</a>
             </div>
           </div>
         </div>
       </div>
-    </footer> 
-
+    </footer>
+      
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       
@@ -180,11 +162,17 @@
       $(document).ready(function(){
         $('.sidenav').sidenav();
       });
+
+      $("#mobile-menu").mouseup(function() {
+        $("#mobile-demo").attr('tabindex', '0');
+        $("#mobile-demo").attr('aria-expanded', 'true');
+      });
     </script>
 
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
     <script>
       $(document).ready(function() {
         var firebaseConfig = {
@@ -201,7 +189,7 @@
     </script>
 
     <!-- Js Folder-->
-    <script type="text/javascript" src="javascript/get_user.js"></script>
+    <script type="text/javascript" src="javascript/see_events.js"></script>
     <script type="text/javascript" src="javascript/header.js"></script>
   </body>
 </html>

@@ -8,17 +8,13 @@ nav ul a, nav .brand-logo {
     color: rgb(0, 0, 0);
 }
 
-.container h5 {
-    margin: 0em; 
-}
-
 li img {
     margin-right: 0.8em;
     margin-top: 0.3em;
 }
 
 header li a{
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .navbar-title {
@@ -40,10 +36,6 @@ header li a{
 .card-style {
   font-size: 1.4em;
   font-weight: bold;
-}
-
-nav {
-    margin-bottom: 0em;
 }
 
 #search {

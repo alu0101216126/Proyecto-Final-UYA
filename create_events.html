@@ -3,21 +3,21 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Menu usuario</title>
+    <title>Añadir eventos</title>
 
-    <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="https://materializecss.com/css/prism.css"  media="screen,projection"/>  
-    <link href="css/user_menu.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="https://materializecss.com/css/prism.css"  media="screen,projection"/>
+    <link href="css/create_events.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/header.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
 
     <!-- Icons -->
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon"> 
     <link rel="icon" href="../images/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
   </head>
-  <body>    
+
+  <body>
     <!-- Header -->
     <header role="contentinfo">
       <nav class="navbar-title">
@@ -41,7 +41,7 @@
           </div>
         </div>
       </nav>
-    
+      
       <!-- Mobile menu -->
       <ul class="sidenav" id="mobile-demo"> 
         <li id="search-margin" class="input-field" tabindex="-1">
@@ -64,70 +64,69 @@
                 <a href="index.html" class="breadcrumb" target="_self" tabindex="9">Inicio</a>
                 <a href="login.html" class="breadcrumb" target="_self" tabindex="10">Iniciar sesión</a>
                 <a href="user_menu.html" class="breadcrumb" target="_self" tabindex="11">Menú de eventos</a>
+                <a href="create_events.html" class="breadcrumb" target="_self" tabindex="12">Añadir eventos</a>
               </div>
             </div>
           </nav>
         </div>
-      </div>  
+      </div>
     
-      <div class="container white user-box center option-box">
+      <div class="container create_event">
+        <h4 tabindex="13">Introduce tu tarea</h4>
         <div class="row">
-          <div class="col s12 m12 l12">
-            <h3 tabindex="12" id="result"></h3>
-            <h4 tabindex="13">Estas son todas las cosas que puedes hacer</h4>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <div class="card teal lighten-4">
-                <div class="card-content white-text">
-                  <span class="card-style purple-text text-darken-3" tabindex="14">Añadir tus eventos de tareas y exámenes</span>
-                  <p class="black-text" tabindex="15">Incluye nuevas tareas y exámenes en tu calendario.</p>
-                </div>
-                <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="create_events.html" target="_self" tabindex="16">Añadir eventos</a>
+          <form role="form" class="col s12 m12 l12">
+            <div class="row">   
+              <div class="input-field col s12 m12 l12">
+                <input id="name_subject" type="text" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Colocar la asignatura" tabindex="14"/>
+                <label for="name_subject" class="black-text">Asignatura</label>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <div class="card teal lighten-4">
-                <div class="card-content white-text">
-                  <span class="card-style purple-text text-darken-3" tabindex="17">Ver tareas y exámenes</span>
-                  <p class="black-text" tabindex="18">Mira las tareas y exámenes de tu calendario, con la opción de eliminarlos.</p>
-                </div>
-                <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="see_events.html" target="_self" tabindex="19">Ver eventos</a>
+            <div class="row">
+              <div class="input-field col s12 m12 l12">
+                <input id="homework_register" type="text" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Nombre de la tarea" tabindex="15"/>
+                <label for="homework_register" class="black-text">Nombre de la tarea</label>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <div class="card teal lighten-4">
-                <div class="card-content white-text">
-                  <span class="card-style purple-text text-darken-3" tabindex="20">Consejos para estudiar</span>
-                    <p class="black-text" tabindex="21">Infórmate acerca de consejos y métodos para estudiar.</p>
-                </div>
-                <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="advices.html" target="_self" tabindex="22">Ver consejos</a>
+            <div class="row">
+              <div class="input-field col s12 m12 l12">
+                <input id="date_homework" type="date" class="validate" aria-required="true" aria-describedby="Fecha de la tarea" tabindex="16"/>
+                <label for="date_homework" class="black-text date_homework">Fecha de la tarea (formato dia/mes/año)</label>
               </div>
             </div>
-          </div>
+            <div class="center">
+              <p id="alert-register"></p>
+              <button role="button" type="button" id="register-homework-button" class="waves-light btn-large" aria-label="Botón para registrar tarea" aria-describedby="Registrar tarea" tabindex="17">Registrar tarea</button>
+            </div>
+          </form>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <div class="card teal lighten-4">
-                <div class="card-content white-text">
-                  <span class="card-style purple-text text-darken-3" tabindex="23">Cerrar sesión</span>
-                  <p class="black-text" tabindex="24">Sal de la cuenta de forma segura. Si quieres volver a ver tus datos, tendrás que iniciar sesión.</p>
-                </div>
-                <a role="button" id="logout" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="index.html" tabindex="25">Cerrar sesión</a>
+      </div>
+
+      <div class="container create_event">
+        <h4 tabindex="18">Introduce tu examen</h4>
+        <div class="row">
+          <form role="form" class="col s12 m12 l12">
+            <div class="row">   
+              <div class="input-field col s12 m12 l12">
+                <input id="name_subject_exam" type="text" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Colocar la asignatura" tabindex="19"/>
+                <label for="name_subject_exam" class="black-text">Asignatura</label>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="input-field col s12 m12 l12">
+                <input id="lesson_exam" type="text" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Tema del examen" tabindex="20"/>
+                <label for="lesson_exam" class="black-text">Tema del examen</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m12 l12">
+                <input id="date_exam" type="date" class="validate" aria-required="true" aria-describedby="Fecha del examen" tabindex="21"/>
+                <label for="date_exam" class="black-text date_exam">Fecha del examen (formato dia/mes/año)</label>
+              </div>
+            </div>
+            <div class="center">
+              <a role="button" type="button" id="register-exam-button" class="waves-light btn-large" aria-label="Botón para registrar examen" aria-describedby="Registrar examen" target="_self" tabindex="22">Registrar examen</a>
+            </div>
+          </form>
         </div>
       </div>
     </main>
@@ -137,20 +136,20 @@
       <div class="container">
         <div class="row">
           <div class="col s12 m7 l6">
-            <h5 class="teal-text text-lighten-4" tabindex="26"><b>Componentes de Focus on Study</b></h5>
+            <h5 class="teal-text text-lighten-4" tabindex="23"><b>Componentes de Focus on Study</b></h5>
             <ul>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101216126" target="_blank" tabindex="27">Daniel Álvarez Medina</a></li>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101228020" target="_blank" tabindex="28">Dayana Armas Alonso</a></li>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101217741" target="_blank" tabindex="29">Alberto Mendoza Rodríguez</a></li>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101254678" target="_blank" tabindex="30">Yago Pérez Molanes</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101216126" target="_blank" tabindex="24">Daniel Álvarez Medina</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101228020" target="_blank" tabindex="25">Dayana Armas Alonso</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101217741" target="_blank" tabindex="26">Alberto Mendoza Rodríguez</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101254678" target="_blank" tabindex="27">Yago Pérez Molanes</a></li>
             </ul>
           </div>
           <div class="col s12 m5 l4 offset-l2">
-            <h5 class="teal-text text-lighten-4" tabindex="31"><b>Redes sociales</b></h5>
+            <h5 class="teal-text text-lighten-4" tabindex="28"><b>Redes sociales</b></h5>
             <ul>
-              <li><img src="images/Facebook.png" alt="Imagen de logo de Facebook" width="25" height="25" tabindex="32"><a class="grey-text text-lighten-3" href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="33">Facebook</a></li>
-              <li><img src="images/Twitter.png" alt="Imagen de logo de Twitter" width="25" height="25" tabindex="34"><a class="grey-text text-lighten-3" href="https://twitter.com/ULL" target="_blank" tabindex="35">Twitter</a></li>
-              <li><img src="images/LinkedIn.png" alt="Imagen de logo de LinkedIn" width="25" height="25" tabindex="36"><a class="grey-text text-lighten-3" href="https://www.linkedin.com/school/universidad-de-la-laguna" target="_blank" tabindex="37">LinkedIn</a></li>
+              <li><img src="images/Facebook.png" alt="Imagen de logo de Facebook" width="25" height="25" tabindex="29"><a class="grey-text text-lighten-3" href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="30">Facebook</a></li>
+              <li><img src="images/Twitter.png" alt="Imagen de logo de Twitter" width="25" height="25" tabindex="31"><a class="grey-text text-lighten-3" href="https://twitter.com/ULL" target="_blank" tabindex="32">Twitter</a></li>
+              <li><img src="images/LinkedIn.png" alt="Imagen de logo de LinkedIn" width="25" height="25" tabindex="33"><a class="grey-text text-lighten-3" href="https://www.linkedin.com/school/universidad-de-la-laguna" target="_blank" tabindex="34">LinkedIn</a></li>
             </ul>
           </div>
         </div>
@@ -158,20 +157,21 @@
       <div class="footer-copyright teal-text text-lighten-4">
         <div class="container">
           <div class="row"> 
-            <div class="col s12 m5 l5" tabindex="38">
+            <div class="col s12 m5 l5" tabindex="35">
               © 2021 Copyright
             </div>
             <div class="col s12 m7 l7">
-              <a class="teal-text text-lighten-4" href="accessibility.html" target="_self" tabindex="39">Accesibilidad</a>
-              <a class="right teal-text text-lighten-4" href="web_map.html" target="_self" tabindex="40">Mapa web</a>
+              <a class="teal-text text-lighten-4" href="accessibility.html" target="_self" tabindex="36">Accesibilidad</a>
+              <a class="right teal-text text-lighten-4" href="web_map.html" target="_self" tabindex="37">Mapa web</a>
             </div>
           </div>
         </div>
       </div>
     </footer> 
-
+      
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
       
     <!-- Materialize js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -179,12 +179,14 @@
     <script>
       $(document).ready(function(){
         $('.sidenav').sidenav();
+        $('.tabs').tabs();
       });
     </script>
 
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
     <script>
       $(document).ready(function() {
         var firebaseConfig = {
@@ -201,7 +203,10 @@
     </script>
 
     <!-- Js Folder-->
-    <script type="text/javascript" src="javascript/get_user.js"></script>
+    <script type="text/javascript" src="javascript/create_events.js"></script>
     <script type="text/javascript" src="javascript/header.js"></script>
   </body>
 </html>
+
+
+
