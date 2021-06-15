@@ -48,9 +48,9 @@
           <input id="search" type="search" tabindex="-1" required>
           <label id="search-label" class="purple-text text-darken-3" for="search" tabindex="-1"><i class="purple-text text-darken-3 material-icons menu-mobile-icon">search</i></label>
         </li>
-        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="iniciar-sesion">Iniciar sesión</a></li>
+        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="login_event">Iniciar sesión</a></li>
         <li><a class="purple-text text-darken-3" href="user_menu.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="mobile_menu_events">Menú de usuario</a></li>
-        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="movil">¿Quiénes somos?</a></li>
+        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="about_us_event">¿Quiénes somos?</a></li>
       </ul>
     </header>
 
@@ -77,13 +77,13 @@
               <p class="red-text text-darken-2 center" tabindex="12">Campos obligatorios están marcados con un asterisco *</p>
               <div class="row">
                 <div class="input-field col s12 m12 l12">
-                  <input id="email_login" type="email" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Colocar el email" tabindex="13"/>
+                  <input id="email_login" type="email" class="validate" aria-autocomplete="list" aria-required="true"  tabindex="13"/>
                   <label for="email_login" class="black-text">Correo electrónico <span class="red-text text-darken-2">*</span></label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12 m12 l12">
-                  <input id="password_login" type="password" class="validate" aria-required="true" aria-valuemin="7" aria-valuemax="30" aria-describedby="Colocar la contraseña" tabindex="14"/>
+                  <input id="password_login" type="password" class="validate" aria-required="true" aria-valuemin="7" aria-valuemax="30" tabindex="14"/>
                   <label for="password_login" class="black-text">Contraseña <span class="red-text text-darken-2">*</span></label>
                 </div>
               </div>
@@ -91,7 +91,7 @@
                 <a href="#" tabindex="15" target="_self">¿Olvidaste tu contraseña?</a>
               </div>
               <div class="center">
-                <button type="button" role="button" id="login_button" class="waves-effect waves-light btn-large" aria-describedby="Iniciar sesión" tabindex="16">Iniciar sesión</button>
+                <button type="button" role="button" id="login_button" class="waves-effect waves-light btn-large" tabindex="16">Iniciar sesión</button>
               </div>
             </form>
           </div>
@@ -102,7 +102,7 @@
               <img src="https://img.icons8.com/ios/452/inscription.png" alt="Imagen que representa un formulario" class="responsive-img center" width="70" height="70" tabindex="19">
             </div>
             <div class="center register-margin">
-              <a role="button" class="waves-light btn-large register_button" aria-describedby="Ir a registro" href="register.html" tabindex="20" target="_self" tabindex="21">Registrarse</a>   
+              <a role="button" class="waves-light btn-large register_button" href="register.html" tabindex="20" target="_self" tabindex="21">Registrarse</a>   
             </div>
           </div>
         </div>
@@ -154,8 +154,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
-      $(document).ready(function(){
+      $(document).ready(function() {
         $('.sidenav').sidenav();
+
+        $("#mobile-menu").mouseup(function() {
+          $("#mobile-demo").attr('tabindex', '0');
+          $("#mobile-demo").attr('aria-expanded', 'true');
+      });
       });
     </script>
 

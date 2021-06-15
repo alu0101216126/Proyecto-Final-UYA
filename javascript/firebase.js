@@ -52,11 +52,12 @@ $(document).ready(function() {
         .then((userCredential) => {
           userCredential.user.updateProfile({
             displayName: name_register
+          }).then(() => { 
+            alert(email_register + ", te has registrado correctamente. Inicia sesión y disfruta de Focus on Study.");
+            window.location.href = "login.html";
           }).catch(function(error) {
             alert("Error: " + error.message);
           });
-          alert(email_register + ", te has registrado correctamente. Inicia sesión y disfruta de Focus on Study.");
-          window.location.href = "login.html";
         })
         .catch((error) => {
           alert("Error al realizar el registro: " + error.message + " Código de error:" + error.code);
@@ -76,10 +77,11 @@ $(document).ready(function() {
           .then((userCredential) => {
             userCredential.user.updateProfile({
               displayName: name_register
+            }).then(() => { 
+              window.location.href = "login.html";
             }).catch(function(error) {
               alert("Error: " + error.message);
             });
-            window.location.href = "login.html";
           })
           .catch((error) => {
             alert("Error al realizar el registro: " + error.message + " Código de error:" + error.code);

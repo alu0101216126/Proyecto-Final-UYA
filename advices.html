@@ -47,9 +47,9 @@
           <input id="search" type="search" tabindex="-1" required>
           <label id="search-label" class="purple-text text-darken-3" for="search" tabindex="-1"><i class="purple-text text-darken-3 material-icons menu-mobile-icon">search</i></label>
         </li>
-        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="iniciar-sesion">Iniciar sesión</a></li>
+        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="login_event">Iniciar sesión</a></li>
         <li><a class="purple-text text-darken-3" href="user_menu.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="mobile_menu_events">Menú de usuario</a></li>
-        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="movil">¿Quiénes somos?</a></li>
+        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="about_us_event">¿Quiénes somos?</a></li>
       </ul>
     </header>
 
@@ -78,7 +78,7 @@
             <p tabindex="15">La <a href="https://blog.educalive.com/como-hacer-calendario-de-estudio/" target="_blank" tabindex="16"><u>técnica de estudio Pomodoro</u></a> está pensada como un método de gestión del 
               tiempo de estudio que se basa en la división del tiempo del estudio entre periodos de atención y descansos.
             </p>
-            <img class="responsive-img" src="images/pomodoro.png" alt="Imagen con cronómetro que representa la técnica de Pomodoro" tabindex="17" width="400" height="400">
+            <img class="responsive-img" src="images/pomodoro.png" alt="Imagen con cronómetro que representa la técnica de Pomodoro"tabindex="17" width="400" height="400">
             <p tabindex="18">
               ¿Cómo funciona el método Pomodoro? La técnica Pomodoro consiste en fraccionar el tiempo de estudio en <b>bloques de 20 a 30 minutos</b> de intensa actividad (cada bloque de estudio lo llamamos <b>pomodoro</b>), 
               que deberán ir alternándose con <b>pequeños descansos de 5 minutos</b>. Cada cuatro bloques de estudio o pomodoros tomaremos un descanso mayor, de unos 20 a 30 minutos.
@@ -87,11 +87,11 @@
         </div>
         <div class="row">
           <div class="col s12 m12 l12">
-            <h5 class="purple-text text-darken-3" tabindex="19">El calendario de estudio</h5>
+            <h5 id="calendar-info" class="purple-text text-darken-3" tabindex="19">Calendario de estudio</h5>
             <p tabindex="20">Un <a href="https://blog.educalive.com/como-hacer-calendario-de-estudio/" target="_blank" tabindex="21"><u>calendario de estudio</u></a> es un calendario en el que quedan reflejadas todas las horas que tienes disponibles para 
               estudiar y la asignación de esas horas al estudio y a las tareas que vas a llevar a cabo en cada asignatura.
             </p>
-            <img class="responsive-img" src="images/calendario.jpg" alt="Imagen de ejemplo de Calendario de Estudio" tabindex="22" width="400" height="400">
+            <img class="responsive-img" src="images/calendario.jpg" alt="Imagen de ejemplo de Calendario de Estudio" aria-labelledby="calendar-info" tabindex="22" width="400" height="400">
             <p tabindex="23">
               El calendario de estudio te va a permitir <b>organizarte mejor y optimizar mejor el tiempo</b> que tienes para estudiar. De verdad, la improvisación no es buena compañera. 
               Además, si pones un calendario de estudio en tu vida te va a resultar más fácil crear una <b>rutina de estudio</b> e, incluso, adoptar el <b>hábito de estudio</b> en tu día a día.
@@ -181,8 +181,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
-      $(document).ready(function(){
+      $(document).ready(function() {
         $('.sidenav').sidenav();
+
+        $("#mobile-menu").mouseup(function() {
+          $("#mobile-demo").attr('tabindex', '0');
+          $("#mobile-demo").attr('aria-expanded', 'true');
+      });
       });
     </script>
 

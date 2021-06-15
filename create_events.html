@@ -48,9 +48,9 @@
           <input id="search" type="search" tabindex="-1" required>
           <label id="search-label" class="purple-text text-darken-3" for="search" tabindex="-1"><i class="purple-text text-darken-3 material-icons menu-mobile-icon">search</i></label>
         </li>
-        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="iniciar-sesion">Iniciar sesión</a></li>
+        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="login_event">Iniciar sesión</a></li>
         <li><a class="purple-text text-darken-3" href="user_menu.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="mobile_menu_events">Menú de usuario</a></li>
-        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="movil">¿Quiénes somos?</a></li>
+        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="about_us_event">¿Quiénes somos?</a></li>
       </ul>
     </header>
 
@@ -77,25 +77,25 @@
           <form role="form" class="col s12 m12 l12">
             <div class="row">   
               <div class="input-field col s12 m12 l12">
-                <input id="name_subject" type="text" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Colocar la asignatura" tabindex="14"/>
+                <input id="name_subject" type="text" class="validate" aria-autocomplete="list" aria-required="true" tabindex="14"/>
                 <label for="name_subject" class="black-text">Asignatura</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 m12 l12">
-                <input id="homework_register" type="text" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Nombre de la tarea" tabindex="15"/>
+                <input id="homework_register" type="text" class="validate" aria-autocomplete="list" aria-required="true" tabindex="15"/>
                 <label for="homework_register" class="black-text">Nombre de la tarea</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 m12 l12">
-                <input id="date_homework" type="date" class="validate" aria-required="true" aria-describedby="Fecha de la tarea" tabindex="16"/>
+                <input id="date_homework" type="date" class="validate" aria-required="true" tabindex="16"/>
                 <label for="date_homework" class="black-text date_homework">Fecha de la tarea (formato dia/mes/año)</label>
               </div>
             </div>
             <div class="center">
               <p id="alert-register"></p>
-              <button role="button" type="button" id="register-homework-button" class="waves-light btn-large" aria-label="Botón para registrar tarea" aria-describedby="Registrar tarea" tabindex="17">Registrar tarea</button>
+              <button role="button" type="button" id="register-homework-button" class="waves-light btn-large" aria-label="Botón para registrar tarea" tabindex="17">Registrar tarea</button>
             </div>
           </form>
         </div>
@@ -107,24 +107,24 @@
           <form role="form" class="col s12 m12 l12">
             <div class="row">   
               <div class="input-field col s12 m12 l12">
-                <input id="name_subject_exam" type="text" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Colocar la asignatura" tabindex="19"/>
+                <input id="name_subject_exam" type="text" class="validate" aria-autocomplete="list" aria-required="true" tabindex="19"/>
                 <label for="name_subject_exam" class="black-text">Asignatura</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 m12 l12">
-                <input id="lesson_exam" type="text" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Tema del examen" tabindex="20"/>
+                <input id="lesson_exam" type="text" class="validate" aria-autocomplete="list" aria-required="true" tabindex="20"/>
                 <label for="lesson_exam" class="black-text">Tema del examen</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 m12 l12">
-                <input id="date_exam" type="date" class="validate" aria-required="true" aria-describedby="Fecha del examen" tabindex="21"/>
+                <input id="date_exam" type="date" class="validate" aria-required="true" tabindex="21"/>
                 <label for="date_exam" class="black-text date_exam">Fecha del examen (formato dia/mes/año)</label>
               </div>
             </div>
             <div class="center">
-              <a role="button" type="button" id="register-exam-button" class="waves-light btn-large" aria-label="Botón para registrar examen" aria-describedby="Registrar examen" target="_self" tabindex="22">Registrar examen</a>
+              <a role="button" type="button" id="register-exam-button" class="waves-light btn-large" aria-label="Botón para registrar examen" target="_self" tabindex="22">Registrar examen</a>
             </div>
           </form>
         </div>
@@ -180,6 +180,11 @@
       $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.tabs').tabs();
+
+        $("#mobile-menu").mouseup(function() {
+          $("#mobile-demo").attr('tabindex', '0');
+          $("#mobile-demo").attr('aria-expanded', 'true');
+      });
       });
     </script>
 

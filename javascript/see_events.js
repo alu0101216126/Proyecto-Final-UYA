@@ -66,23 +66,24 @@ $(document).ready(function() {
         $( "input:checkbox"  ).each(function( index ) {
             if($( this ).is(':checked')) {
                 if(index < array_homework.length) {
-                  db.collection("homework").doc(array_homework[index]).delete().catch((error) => {
+                  db.collection("homework").doc(array_homework[index]).delete().then(() => {
+                    alert("¡Tareas eliminadas!");
+                    location.reload();
+                  })
+                  .catch((error) => {
                       alert("Error al eliminar la tarea: ", error.message);
                   });
-                  console.log(array_homework[index]);
                 } else {
                     var index_aux = index - array_homework.length;  
-                    db.collection("exams").doc(array_exam[index_aux]).delete().catch((error) => {
+                    db.collection("exams").doc(array_exam[index_aux]).delete().then(() => {
+                        alert("¡Examenes eliminados!");
+                        location.reload();
+                    }).catch((error) => {
                         alert("Error al eliminar el examen: ", error.message);
                     });
-                    console.log(index_aux, array_exam[index_aux]);
                 }
-            } else {
-                console.log(""); 
             }
           });
-          alert("¡Eventos eliminados!");
-          location.reload();
     });
 
 
@@ -91,23 +92,23 @@ $(document).ready(function() {
             $( "input:checkbox"  ).each(function( index ) {
                 if($( this ).is(':checked')) {
                     if(index < array_homework.length) {
-                    db.collection("homework").doc(array_homework[index]).delete().catch((error) => {
+                    db.collection("homework").doc(array_homework[index]).delete().then(() => {
+                        alert("¡Tareas eliminadas!");
+                        location.reload();
+                    }).catch((error) => {
                         alert("Error al eliminar la tarea: ", error.message);
                     });
-                    console.log(array_homework[index]);
                     } else {
                         var index_aux = index - array_homework.length;  
-                        db.collection("exams").doc(array_exam[index_aux]).delete().catch((error) => {
+                        db.collection("exams").doc(array_exam[index_aux]).delete().then(() => {
+                            alert("¡Examenes eliminados!");
+                            location.reload();
+                        }).catch((error) => {
                             alert("Error al eliminar el examen: ", error.message);
                         });
-                        console.log(index_aux, array_exam[index_aux]);
                     }
-                } else {
-                    console.log(""); 
                 }
             });
-            alert("¡Eventos eliminados!");
-            location.reload();
         }
     });
 

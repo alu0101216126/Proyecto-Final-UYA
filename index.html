@@ -50,19 +50,18 @@
           <input id="search" type="search" tabindex="-1" required>
           <label id="search-label" class="purple-text text-darken-3" for="search" tabindex="-1"><i class="purple-text text-darken-3 material-icons menu-mobile-icon">search</i></label>
         </li>
-        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="iniciar-sesion">Iniciar sesión</a></li>
+        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="login_event">Iniciar sesión</a></li>
         <li><a class="purple-text text-darken-3" href="user_menu.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="mobile_menu_events">Menú de usuario</a></li>
-        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="movil">¿Quiénes somos?</a></li>
+        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="about_us_event">¿Quiénes somos?</a></li>
       </ul>
     </header>
 
     <main>
-      <!-- Breadcrumbs -->
       <div class="row teal lighten-4">
         <div class="col s12 m12 l12 center cover-page">
           <h1 class="header center purple-text text-darken-3" tabindex="9">Focus on Study</h1>
           <h5 class="header col s12 m12 l12 light" tabindex="10">Organízate y aprovecha tu tiempo al máximo</h5>
-          <a role="button" class="waves-light btn-large register_button" aria-describedby="Ir a registro" href="register.html" target="_self" tabindex="11">Registrarse</a> 
+          <a role="button" id="" class="waves-light btn-large register_button" href="register.html" target="_self" tabindex="11">Registrarse</a>
         </div>
       </div>
 
@@ -164,8 +163,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
-      $(document).ready(function(){
+      $(document).ready(function() {
         $('.sidenav').sidenav();
+
+        $("#mobile-menu").mouseup(function() {
+          $("#mobile-demo").attr('tabindex', '0');
+          $("#mobile-demo").attr('aria-expanded', 'true');
+      });
       });
     </script>
 

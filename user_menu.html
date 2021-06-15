@@ -48,9 +48,9 @@
           <input id="search" type="search" tabindex="-1" required>
           <label id="search-label" class="purple-text text-darken-3" for="search" tabindex="-1"><i class="purple-text text-darken-3 material-icons menu-mobile-icon">search</i></label>
         </li>
-        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="iniciar-sesion">Iniciar sesión</a></li>
+        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="login_event">Iniciar sesión</a></li>
         <li><a class="purple-text text-darken-3" href="user_menu.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="mobile_menu_events">Menú de usuario</a></li>
-        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="movil">¿Quiénes somos?</a></li>
+        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="about_us_event">¿Quiénes somos?</a></li>
       </ul>
     </header>
 
@@ -85,7 +85,7 @@
                   <span class="card-style purple-text text-darken-3" tabindex="14">Añadir tus eventos de tareas y exámenes</span>
                   <p class="black-text" tabindex="15">Incluye nuevas tareas y exámenes en tu calendario.</p>
                 </div>
-                <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="create_events.html" target="_self" tabindex="16">Añadir eventos</a>
+                <a role="button" class="waves-effect waves-light btn-large option-button" href="create_events.html" target="_self" tabindex="16">Añadir eventos</a>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@
                   <span class="card-style purple-text text-darken-3" tabindex="17">Ver tareas y exámenes</span>
                   <p class="black-text" tabindex="18">Mira las tareas y exámenes de tu calendario, con la opción de eliminarlos.</p>
                 </div>
-                <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="see_events.html" target="_self" tabindex="19">Ver eventos</a>
+                <a role="button" class="waves-effect waves-light btn-large option-button" href="see_events.html" target="_self" tabindex="19">Ver eventos</a>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
                   <span class="card-style purple-text text-darken-3" tabindex="20">Consejos para estudiar</span>
                     <p class="black-text" tabindex="21">Infórmate acerca de consejos y métodos para estudiar.</p>
                 </div>
-                <a role="button" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="advices.html" target="_self" tabindex="22">Ver consejos</a>
+                <a role="button" class="waves-effect waves-light btn-large option-button" href="advices.html" target="_self" tabindex="22">Ver consejos</a>
               </div>
             </div>
           </div>
@@ -122,9 +122,9 @@
               <div class="card teal lighten-4">
                 <div class="card-content white-text">
                   <span class="card-style purple-text text-darken-3" tabindex="23">Cerrar sesión</span>
-                  <p class="black-text" tabindex="24">Sal de la cuenta de forma segura. Si quieres volver a ver tus datos, tendrás que iniciar sesión.</p>
+                  <p id="logout-info" class="black-text" tabindex="-1">Sal de la cuenta de forma segura. Si quieres volver a ver tus datos, tendrás que iniciar sesión.</p>
                 </div>
-                <a role="button" id="logout" class="waves-effect waves-light btn-large option-button" aria-describedby="Añadir nuevos eventos" href="index.html" tabindex="25">Cerrar sesión</a>
+                <a role="button" id="logout" class="waves-effect waves-light btn-large option-button" aria-describedby="logout-info" href="index.html" tabindex="24">Cerrar sesión</a>
               </div>
             </div>
           </div>
@@ -137,20 +137,20 @@
       <div class="container">
         <div class="row">
           <div class="col s12 m7 l6">
-            <h5 class="teal-text text-lighten-4" tabindex="26"><b>Componentes de Focus on Study</b></h5>
+            <h5 class="teal-text text-lighten-4" tabindex="25"><b>Componentes de Focus on Study</b></h5>
             <ul>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101216126" target="_blank" tabindex="27">Daniel Álvarez Medina</a></li>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101228020" target="_blank" tabindex="28">Dayana Armas Alonso</a></li>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101217741" target="_blank" tabindex="29">Alberto Mendoza Rodríguez</a></li>
-              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101254678" target="_blank" tabindex="30">Yago Pérez Molanes</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101216126" target="_blank" tabindex="26">Daniel Álvarez Medina</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101228020" target="_blank" tabindex="27">Dayana Armas Alonso</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101217741" target="_blank" tabindex="28">Alberto Mendoza Rodríguez</a></li>
+              <li><a class="grey-text text-lighten-4" href="https://github.com/alu0101254678" target="_blank" tabindex="29">Yago Pérez Molanes</a></li>
             </ul>
           </div>
           <div class="col s12 m5 l4 offset-l2">
-            <h5 class="teal-text text-lighten-4" tabindex="31"><b>Redes sociales</b></h5>
+            <h5 class="teal-text text-lighten-4" tabindex="30"><b>Redes sociales</b></h5>
             <ul>
-              <li><img src="images/Facebook.png" alt="Imagen de logo de Facebook" width="25" height="25" tabindex="32"><a class="grey-text text-lighten-3" href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="33">Facebook</a></li>
-              <li><img src="images/Twitter.png" alt="Imagen de logo de Twitter" width="25" height="25" tabindex="34"><a class="grey-text text-lighten-3" href="https://twitter.com/ULL" target="_blank" tabindex="35">Twitter</a></li>
-              <li><img src="images/LinkedIn.png" alt="Imagen de logo de LinkedIn" width="25" height="25" tabindex="36"><a class="grey-text text-lighten-3" href="https://www.linkedin.com/school/universidad-de-la-laguna" target="_blank" tabindex="37">LinkedIn</a></li>
+              <li><img src="images/Facebook.png" alt="Imagen de logo de Facebook" width="25" height="25" tabindex="31"><a class="grey-text text-lighten-3" href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="32">Facebook</a></li>
+              <li><img src="images/Twitter.png" alt="Imagen de logo de Twitter" width="25" height="25" tabindex="33"><a class="grey-text text-lighten-3" href="https://twitter.com/ULL" target="_blank" tabindex="34">Twitter</a></li>
+              <li><img src="images/LinkedIn.png" alt="Imagen de logo de LinkedIn" width="25" height="25" tabindex="35"><a class="grey-text text-lighten-3" href="https://www.linkedin.com/school/universidad-de-la-laguna" target="_blank" tabindex="36">LinkedIn</a></li>
             </ul>
           </div>
         </div>
@@ -158,12 +158,12 @@
       <div class="footer-copyright teal-text text-lighten-4">
         <div class="container">
           <div class="row"> 
-            <div class="col s12 m5 l5" tabindex="38">
+            <div class="col s12 m5 l5" tabindex="37">
               © 2021 Copyright
             </div>
             <div class="col s12 m7 l7">
-              <a class="teal-text text-lighten-4" href="accessibility.html" target="_self" tabindex="39">Accesibilidad</a>
-              <a class="right teal-text text-lighten-4" href="web_map.html" target="_self" tabindex="40">Mapa web</a>
+              <a class="teal-text text-lighten-4" href="accessibility.html" target="_self" tabindex="38">Accesibilidad</a>
+              <a class="right teal-text text-lighten-4" href="web_map.html" target="_self" tabindex="39">Mapa web</a>
             </div>
           </div>
         </div>
@@ -177,8 +177,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
-      $(document).ready(function(){
+      $(document).ready(function() {
         $('.sidenav').sidenav();
+
+        $("#mobile-menu").mouseup(function() {
+          $("#mobile-demo").attr('tabindex', '0');
+          $("#mobile-demo").attr('aria-expanded', 'true');
+      });
       });
     </script>
 

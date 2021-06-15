@@ -47,9 +47,9 @@
           <input id="search" type="search" tabindex="-1" required>
           <label id="search-label" class="purple-text text-darken-3" for="search" tabindex="-1"><i class="purple-text text-darken-3 material-icons menu-mobile-icon">search</i></label>
         </li>
-        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="iniciar-sesion">Iniciar sesión</a></li>
+        <li><a class="purple-text text-darken-3" href="login.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="login_event">Iniciar sesión</a></li>
         <li><a class="purple-text text-darken-3" href="user_menu.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="mobile_menu_events">Menú de usuario</a></li>
-        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="movil">¿Quiénes somos?</a></li>
+        <li><a class="purple-text text-darken-3" href="about_us.html" role="treeitem" aria-expanded="false" target="_self" tabindex="-1" id="about_us_event">¿Quiénes somos?</a></li>
       </ul>
     </header>
 
@@ -75,40 +75,40 @@
             <p class="red-text text-darken-2" tabindex="12">Los campos obligatorios están marcados con un asterisco *</p>
             <div class="row">   
               <div class="input-field col s12 m6 l6">
-                <input id="name_register" type="text" class="validate" aria-required="true" aria-describedby="Colocar el nombre" tabindex="13"/>
+                <input id="name_register" type="text" class="validate" aria-required="true" tabindex="13"/>
                 <label for="name_register" class="black-text">Nombre <span class="red-text text-darken-2">*</span></label>
               </div>
               <div class="input-field col s12 m6 l6">
-                <input id="surname_register" type="text" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Colocar los apellidos" tabindex="14"/>
+                <input id="surname_register" type="text" class="validate" aria-autocomplete="list" aria-required="true" tabindex="14"/>
                 <label for="surname_register" class="black-text">Apellidos <span class="red-text text-darken-2">*</span></label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 m12 l12">
-                <input id="email_register" type="email" class="validate" aria-autocomplete="list" aria-required="true" aria-describedby="Colocar el email" tabindex="15"/>
+                <input id="email_register" type="email" class="validate" aria-autocomplete="list" aria-required="true" tabindex="15"/>
                 <label for="email_register" class="black-text">Correo electrónico <span class="red-text text-darken-2">*</span></label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 m12 l12">
-                <input id="password_register" type="password" class="validate" aria-required="true" aria-valuemin="7" aria-valuemax="30" aria-describedby="Colocar la contraseña" tabindex="16"/>
+                <input id="password_register" type="password" class="validate" aria-required="true" aria-valuemin="7" aria-valuemax="30" tabindex="16"/>
                 <label for="password_register" class="black-text">Contraseña <span class="red-text text-darken-2">*</span></label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 m12 l12">
-                <input id="repeat-password" type="password" class="validate" aria-required="true" aria-valuemin="7" aria-valuemax="30" aria-describedby="Repetir la contraseña" tabindex="17"/>
+                <input id="repeat-password" type="password" class="validate" aria-required="true" aria-valuemin="7" aria-valuemax="30" tabindex="17"/>
                 <label for="repeat-password" class="black-text">Repita la contraseña <span class="red-text text-darken-2">*</span></label>
               </div>
             </div>
             <p class="amount-characters red-text text-darken-2" tabindex="18">La contraseña debe tener como mínimo 7 caracteres</p>
             <div class="row">
               <div class="input-field col s12 m12 l12">
-                <label><input role="checkbox" id="terms" type="checkbox" class="check" aria-required="true" aria-describedby="Aceptación de términos" tabindex="19"/><span class="black-text" id="accept-terms">Acepto los términos y condiciones del sitio web <span class="red-text text-darken-2">*</span></span></label>
+                <label><input role="checkbox" id="terms" type="checkbox" class="check" aria-required="true" tabindex="19"/><span class="black-text" id="accept-terms">Acepto los términos y condiciones del sitio web <span class="red-text text-darken-2">*</span></span></label>
               </div>
             </div>
             <div class="center">
-              <button role="button" type="button" id="register-button" class="waves-light btn-large" aria-describedby="Enviar registro" tabindex="20">Registrarse</button>
+              <button role="button" type="button" id="register-button" class="waves-light btn-large" tabindex="20">Registrarse</button>
             </div>
           </form>
         </div>
@@ -162,6 +162,11 @@
     <script>
       $(document).ready(function(){
         $('.sidenav').sidenav();
+
+        $("#mobile-menu").mouseup(function() {
+          $("#mobile-demo").attr('tabindex', '0');
+          $("#mobile-demo").attr('aria-expanded', 'true');
+      });
       });
     </script>
 
