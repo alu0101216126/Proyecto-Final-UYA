@@ -24,8 +24,8 @@
 ## Miembros
 
 <ul>
-  <li>Daniel Álvarez Medina</li>
-  <li>Dayana Armas Alonso</li>
-  <li>Alberto Mendoza Rodríguez</li>
-  <li>Yago Pérez Molanes</li>
+  <li>Daniel Álvarez Medina (alu0101216126@ull.edu.es)</li>
+  <li>Dayana Armas Alonso (alu0101228020@ull.edu.es)</li>
+  <li>Alberto Mendoza Rodríguez (alu0101217741@ull.edu.es)</li>
+  <li>Yago Pérez Molanes (alu0101206479@ull.edu.es)</li>
 </ul>
