@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Enlace a página web: <a href="https://alu0101216126.github.io/Proyecto-Final-UYA/index.html">https://alu0101216126.github.io/Proyecto-Final-UYA/index.html</a>
+  Enlace a sitio web: <a href="https://alu0101216126.github.io/Proyecto-Final-UYA/index.html">https://alu0101216126.github.io/Proyecto-Final-UYA/index.html</a>
 </p>
 
 <p align="center">
