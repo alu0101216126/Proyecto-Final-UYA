@@ -29,3 +29,16 @@
   <li>Alberto Mendoza Rodríguez (alu0101217741@ull.edu.es)</li>
   <li>Yago Pérez Molanes (alu0101206479@ull.edu.es)</li>
 </ul>
+
+## Descripción
+
+El proyecto realizado tiene como tema la gestión del tiempo de estudio por parte de los estudiantes para hacer de manera más fácil y cómoda la organización de las distintas tareas y exámenes con los que cuentan. Por lo que, está potencialmente enfocada para aquellos estudiantes que no saben cómo organizar su tiempo de forma adecuada, así como para aquellos que desean maximizar y optimizar las tareas y los exámenes.
+
+[Informe final](/informes/Informe%20proyecto%20-%20UYA.pdf)
+[Presentación](/informes/Presentación%20Proyecto%20final%20UyA.pdf)
+
+## Acciones respecto a la accesibilidad y usabilidad
+
+A la hora de realizar un sitio web, debemos de tener en cuenta y valorar, la accesibilidad y usabilidad del sitio, es decir, que cualquier usuario pueda navegar por nuestras páginas sin ningún problema. Para lograr esto hemos llevado a cabo una serie de acciones.
+
+Para contemplar esas acciones, dirígase a la sección de **Acciones respecto a la accesibilidad y usabilidad** del [informe](/informes/Informe%20proyecto%20-%20UYA.pdf)
