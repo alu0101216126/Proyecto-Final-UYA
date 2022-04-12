@@ -34,9 +34,8 @@
 
 El proyecto realizado tiene como tema la gestión del tiempo de estudio por parte de los estudiantes para hacer de manera más fácil y cómoda la organización de las distintas tareas y exámenes con los que cuentan. Por lo que, está potencialmente enfocada para aquellos estudiantes que no saben cómo organizar su tiempo de forma adecuada, así como para aquellos que desean maximizar y optimizar las tareas y los exámenes.
 
-[Informe final](/informes/Informe%20proyecto%20-%20UYA.pdf)
-
-[Presentación](/informes/Presentación%20Proyecto%20final%20UyA.pdf)
+* Acceda al [informe final](/informes/Informe%20proyecto%20-%20UYA.pdf)
+* Acceda a la [presentación](/informes/Presentación%20Proyecto%20final%20UyA.pdf)
 
 ## Acciones respecto a la accesibilidad y usabilidad
 
