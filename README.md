@@ -42,4 +42,4 @@ El proyecto realizado tiene como tema la gestión del tiempo de estudio por part
 
 A la hora de realizar un sitio web, debemos de tener en cuenta y valorar, la accesibilidad y usabilidad del sitio, es decir, que cualquier usuario pueda navegar por nuestras páginas sin ningún problema. Para lograr esto hemos llevado a cabo una serie de acciones.
 
-Para contemplar esas acciones, dirígase a la sección de **Acciones respecto a la accesibilidad y usabilidad** del [informe](/informes/Informe%20proyecto%20-%20UYA.pdf)
+Para contemplar esas acciones, dirígase a la sección de "**Acciones respecto a la accesibilidad y usabilidad**" del [informe](/informes/Informe%20proyecto%20-%20UYA.pdf)
