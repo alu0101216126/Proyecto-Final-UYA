@@ -1,13 +1,13 @@
 ## Proyecto final UYA - Focus on Study</h1>
 
 <p align="center">
-  <a href="https://danielalvarezm.github.io/Proyecto-Final-UYA/index.html">
+  <a href="https://danielalvarezm.github.io/UYA-Proyecto-de-accesibilidad/">
     <img src="images/logo.png" width="150" style="max-width:100%;">
   </a>
 </p>
 
 <p align="center">
-  Enlace a sitio web: <a href="https://danielalvarezm.github.io/Proyecto-Final-UYA/index.html">https://danielalvarezm.github.io/Proyecto-Final-UYA/index.html</a>
+  Enlace a sitio web: <a href="https://danielalvarezm.github.io/UYA-Proyecto-de-accesibilidad/">https://danielalvarezm.github.io/UYA-Proyecto-de-accesibilidad/</a>
 </p>
 
 <p align="center">
